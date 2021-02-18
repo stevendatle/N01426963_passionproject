@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace N01426963_passionproject.Controllers
 {
-    public class WoWDataController : ApiController
+    public class ClassDataController : ApiController
     {
         private WoWDBContext WoW = new WoWDBContext();
 
@@ -24,7 +24,7 @@ namespace N01426963_passionproject.Controllers
         /// </returns>
         
         [HttpGet]
-        [Route("api/WoWData/ListClasses")]
+        [Route("api/ClassData/ListClasses")]
         public IEnumerable<Classes> ListClasses()
         {
             //Allowing access into my MySQL Database
