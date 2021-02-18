@@ -15,13 +15,8 @@ namespace N01426963_passionproject.Models
 
         public string ClassName { get; set; }
 
-        [ForeignKey("Specs")]
 
-        public int SpecID { get; set; }
-
-        public string SpecName { get; set; }
-
-        
+    
 
     }
 }
