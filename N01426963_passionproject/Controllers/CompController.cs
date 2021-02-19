@@ -85,7 +85,7 @@ namespace N01426963_passionproject.Controllers
             NewComp.CompClass3 = CompClass3;
 
             compdatacontroller.AddComp(NewComp);
-
+            
             
             
             return RedirectToAction("List");

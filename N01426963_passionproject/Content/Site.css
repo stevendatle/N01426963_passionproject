@@ -21,11 +21,6 @@ nav {
     margin-bottom: 30px;
 }
 
-.navlink {
-    float: left;
-}
-
-.dellink {
-    float: right;
-    color: #f00;
+.compstyle {
+    color: #00ff21;
 }

@@ -10,6 +10,19 @@ using System.Diagnostics;
 
 namespace N01426963_passionproject.Controllers
 {
+
+    /// <summary>
+    /// Controller connecting data to create + delete + list
+    /// 
+    /// TO DO LIST:
+    /// Connect Wowclasses to each class
+    /// User will be able to enter a class name and the class data will already be matched up with it
+    /// Example: when a person adds Warrior to a composition, warrior data will already be attached to the query
+    /// 
+    /// 
+    /// Add images to each class
+    /// Make LIST page look cleaner
+    /// </summary>
     public class CompDataController : ApiController
     {
         private WoWDBContext WoW = new WoWDBContext();
