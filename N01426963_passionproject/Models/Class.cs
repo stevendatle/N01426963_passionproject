@@ -7,23 +7,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace N01426963_passionproject.Models
 {
-    public class Comps
+    //This class will be used to describe a "class" in World of Warcraft.
+    public class Class
     {
-
         [Key]
-        public int CompID { get; set; }
+        public int ClassID { get; set; }
 
-        public string CompName { get; set; }
-
-        public string CompClass1 { get; set; }
-
-        public string CompClass2 { get; set; }
-
-        public string CompClass3 { get; set; }
+        public string ClassName { get; set; }
 
 
-
-
+    
 
     }
 }

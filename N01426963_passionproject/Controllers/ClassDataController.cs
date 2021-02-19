@@ -25,7 +25,7 @@ namespace N01426963_passionproject.Controllers
         
         [HttpGet]
         [Route("api/ClassData/ListClasses")]
-        public IEnumerable<Classes> ListClasses()
+        public IEnumerable<Class> ListClasses()
         {
             //Allowing access into my MySQL Database
             MySqlConnection Conn = WoW.AccessDatabase();
@@ -46,7 +46,7 @@ namespace N01426963_passionproject.Controllers
             MySqlDataReader ResultSet = cmd.ExecuteReader();
 
             //Creating an empty list of classes
-            List<Classes> Classes = new List<Classes> { };
+            List<Class> Classes = new List<Class> { };
 
             //Loop through each row of result set
             while (ResultSet.Read())
@@ -55,7 +55,7 @@ namespace N01426963_passionproject.Controllers
                 int ClassId = (int)ResultSet["classid"];
                 string ClassName = (string)ResultSet["class_name"];
 
-                Classes NewClass = new Classes();
+                Class NewClass = new Class();
                 NewClass.ClassID = ClassId;
                 NewClass.ClassName = ClassName;
 

@@ -1,0 +1,19 @@
+﻿@model N01426963_passionproject.Models.Comp
+
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+
+
+
+<h2>Do you want to delete @Model.CompName?</h2>
+<p>There is no turning back!</p>
+
+<nav>
+    <a class="navlink" style="float:left" href="/Comp/Show/@Model.CompID">Cancel</a>
+    <form method="POST" action="/Comp/Delete/@Model.CompID">
+        <button style="float:right" href="">Confirm Delete</button>
+    </form>
+</nav>

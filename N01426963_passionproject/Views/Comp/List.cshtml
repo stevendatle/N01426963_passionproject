@@ -1,0 +1,18 @@
+﻿@model IEnumerable<N01426963_passionproject.Models.Comp>
+@{
+    ViewBag.Title = "List";
+}
+
+
+<nav>
+    <a class="navlink" href="/Comp/New">New Composition</a>
+</nav>
+<h2>List of Comps</h2>
+<p>This page should be showing information about all compositions.</p>
+@foreach (var comp in Model)
+{
+    <div class="list_item_row">
+        <div class="col-md-12"><a href="/Comp/Show/@comp.CompID">@comp.CompName</a></div>
+    </div>
+}
+
